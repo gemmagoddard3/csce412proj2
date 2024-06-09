@@ -1,3 +1,6 @@
+
+# Idectical pages
+
 version: '3.8'
 services:
   web1:
@@ -11,60 +14,59 @@ services:
     ports:
       - "8081:80"
     volumes:
-      - /home/ubuntu/Project2/pages/page2:/usr/share/nginx/html
+      - /home/ubuntu/Project2/pages/page1:/usr/share/nginx/html
   web3:
     image: nginx:latest
     ports:
       - "8082:80"
     volumes:
-      - /home/ubuntu/Project2/pages/page3:/usr/share/nginx/html
+      - /home/ubuntu/Project2/pages/page1:/usr/share/nginx/html
   web4:
     image: nginx:latest
     ports:
       - "8083:80"
     volumes:
-      - /home/ubuntu/Project2/pages/page4:/usr/share/nginx/html
+       - /home/ubuntu/Project2/pages/page1:/usr/share/nginx/html
   web5:
     image: nginx:latest
     ports:
       - "8084:80"
     volumes:
-      - /home/ubuntu/Project2/pages/page5:/usr/share/nginx/html
+       - /home/ubuntu/Project2/pages/page1:/usr/share/nginx/html
 
 
+# Unique pages
 
-
-
-
+# version: '3.8'
 # services:
 #   web1:
 #     image: nginx:latest
 #     ports:
 #       - "8080:80"
 #     volumes:
-#       - /home/ubuntu/Project2:/usr/share/nginx/html
+#       - /home/ubuntu/Project2/pages/page1:/usr/share/nginx/html
 #   web2:
 #     image: nginx:latest
 #     ports:
 #       - "8081:80"
 #     volumes:
-#       - /home/ubuntu/Project2/:/usr/share/nginx/html
+#       - /home/ubuntu/Project2/pages/page2:/usr/share/nginx/html
 #   web3:
 #     image: nginx:latest
 #     ports:
 #       - "8082:80"
 #     volumes:
-#       - /home/ubuntu/Project2/:/usr/share/nginx/html
+#       - /home/ubuntu/Project2/pages/page3:/usr/share/nginx/html
 #   web4:
 #     image: nginx:latest
 #     ports:
 #       - "8083:80"
 #     volumes:
-#       - /home/ubuntu/Project2/:/usr/share/nginx/html
+#       - /home/ubuntu/Project2/pages/page4:/usr/share/nginx/html
 #   web5:
 #     image: nginx:latest
 #     ports:
 #       - "8084:80"
 #     volumes:
-#       - /home/ubuntu/Project2:/usr/share/nginx/html
+#       - /home/ubuntu/Project2/pages/page5:/usr/share/nginx/html
 
